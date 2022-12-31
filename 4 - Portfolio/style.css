@@ -1,0 +1,179 @@
+* {
+    scroll-behavior: smooth;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#welcome-section {
+    background: linear-gradient(180deg, navy, rgb(54, 18, 18));
+    padding: 15% 15% 12% 15%;
+    color: rgb(239, 240, 255);
+    font-size: 1vw;
+    text-align: center;
+}
+
+#project {
+    background: linear-gradient(180deg, rgb(54, 18, 18), brown);
+    padding: 10% 15% 10% 15%;
+}
+
+#contact {
+    background: linear-gradient(180deg, brown, rgb(151, 98, 0));
+    padding: 15%;
+}
+
+.star {
+    width: 35px;
+    height: 35px;
+    margin: 50px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#star-1 {
+    left: 60%;
+    bottom: 80%;
+}
+
+#star-2 {
+    left: 35%;
+    bottom: 74%;
+}
+
+#star-3 {
+    left:20%;
+    bottom: 81%;
+}
+
+#star-4 {
+    right: 21%;
+    bottom: 83%;
+}
+
+#star-5 {
+    left: 10%;
+    top: 13%;
+}
+
+.moon {
+    width: 100px;
+    height: 100px;
+    right: 12%;
+    top: 9%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px;
+    color: yellow;
+    transition: 0.2s;
+}
+
+.moon:hover {
+    transform: scale(1.2);
+}
+
+.title {
+    position: inherit;
+    top: 10%;
+    margin: 10%;
+}
+
+h1 {
+    font-size: 2.5vw;   
+    color: rgb(239, 240, 255);
+    text-align: center;
+}
+
+.project-display {
+    padding: 20px 20px 0px 20px;
+    margin: 0px 50px 0px 50px;
+    transition: 0.2s;
+    text-decoration: none;
+    background: rgba(78, 78, 78, 0.411)
+}
+
+.project-display:hover {
+    transform: scale(1.1);
+}
+
+.project-title {
+    text-align: center;
+    color: white;
+    font-size: 1.1vw;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+#long-title {
+    top: 0px;
+}
+
+
+
+#about {transition: 0.6s;}
+
+#about:hover {transform: scale(1.3);}
+
+.display {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    filter: invert(1);
+}
+
+#codepen {
+    top: 5px;
+    position: relative;
+    transition: 0.2s;
+}
+
+#codepen:hover {transform: scale(1.1);}
+
+#instagram {transition: 0.2s}
+
+#instagram:hover {transform: scale(1.1);}
+
+#linkedin {transition: 0.2s;}
+
+#linkedin:hover {transform: scale(1.1);}
+
+#navbar {
+    min-height: 75px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.336);
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: rgb(239, 240, 255);
+    margin-right: 3vw;
+}

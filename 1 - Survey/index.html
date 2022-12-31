@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en-us"> <!--MEREU-->
+	<head> <!--MEREU-->
+		<meta charset="UTF-8"> <!--MEREU-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--MEREU-->
+		<link rel="stylesheet" href="style.css"> <!--linkuim CSS in fisier-->
+		<title>Feedback survey</title>
+	</head>
+	<body> <!--MEREU-->
+		<header>
+			<h1 id="title" class="center">Feedback & second semester classes</h1>
+			<p id="description" class="center"><em>Polytechnic University of Bucharest</em></p>
+		</header>
+		<form id="survey-form">	
+			<div class="form-group">
+    			<label for="name" id="name-label">Name</label><br>
+				<input type="text" id="name" placeholder="Enter your name" 
+				class="text-input" required></input>
+			</div>
+			<div class="form-group">
+  				<label for="email" id="email-label">Email</label><br>
+				<input type="email" id="email" placeholder="Enter your email" 
+				class="text-input" required></input>
+			</div>
+			<div class="form-group">
+				<label for="number">Number</label><br>
+				<input type="number" id="number" placeholder="Phone number" 
+				class="text-input" min="0" max="9"></input>
+			</div>
+			<div class="form-group">
+				<p for="dropdown">What was your favourite class?</p>
+				<select id="dropdown">
+					<option selected>Choose one</option>
+					<option value="CS">Computer Science</option>
+					<option value="AL">Algebra</option>
+					<option value="Ch">Chemestry</option>
+					<option value="Ca">Calculus</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>What program suits you?</p>
+				<input type="radio"	name="program" value="8-14" checked>
+				<label>08:00-14:00</label></br>
+				<input type="radio" name="program" value="14-20">
+				<label>14:00-20:00</label>
+			</div>
+			<div class="form-group">
+				<p>Please select an optional class for this semester:</p>
+				<input type="checkbox" value="Art" class="input-checkbox">
+				<label>Art</label><br>
+				<input type="checkbox" value="Public speaking" class="input-checkbox">
+				<label>Public speaking</label><br>
+				<input type="checkbox" value="Psychology" class="input-checkbox">
+				<label>Psychology</label>
+			</div>
+			<div>
+				<p>Any additional info?</p>
+				<textarea rows="30" columns="100" class="text-input" id="are" 
+				placeholder="Enter your comment here"></textarea>
+			</div>
+			<input type="submit" id="submit" class="button">
+		</form><br>
+	</body>
+</html>
